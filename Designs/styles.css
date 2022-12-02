@@ -1,0 +1,37 @@
+html{
+
+ background: url("../images/pizza-bck-new.png") no-repeat center center fixed; 
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+
+}
+#header{
+    background-color:#080807;
+    color:#fff;
+  
+}
+ 
+.logo-nav{
+    width:150px
+}
+
+.navbar{ 
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+   
+}
+.nav-links{ 
+       gap: 60px;
+    display: flex;
+align-items: center;}
+
+.nav-links a{
+    text-shadow: 7px 5px 13px rgba(255, 255, 255, 0.79);
+    color: white;
+ text-decoration: none
+
+}
+

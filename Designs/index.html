@@ -5,42 +5,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css" />
+
     <title>Pizza</title>
 </head>
 
 <body>
-    <header id="header">
-        <div className="navbar">
-            <div className="leftSide">
-                <img src="../images/logo-nav.png" />
-                <div className="">
-                    <a href="/"> Home </a>
-                    <a href="menu"> Menu </a>
-                    <a href="about"> About </a>
-                    <a href="contact"> Contact </a>
-                </div>
+    <header id="header" class="header">
+        <div class="navbar">
+            <div>
+                <img class="logo-nav" src="../images/logo-nav.png" />
             </div>
+           
+            <div class="nav-links">
+                <a href="/"> Home </a>
+                <a href="menu"> Menu </a>
+                <a href="about"> About </a>
+                <a href="contact"> Contact </a>
 
+            </div>
+<div>
+    <i class="fa-solid fa-cart-shopping"></i>
+</div>
         </div>
     </header>
-<main>
-    <div className="home" >
-        <div className="">
-          <h1> Donevis's Pizzeria </h1>
-          <p> Do good. Be nice. Order pizza. Repeat.</p>
-          <Link to="/menu">
-            <button> ORDER NOW </button>
-          </Link>
+    <main>
+        <div class="home">
+            <div class="">
+                <h1> Donevis's Pizzeria </h1>
+                <p> Do good. Be nice. Order pizza. Repeat.</p>
+                <Link to="/menu">
+                <button> ORDER NOW </button>
+                </Link>
+            </div>
         </div>
-      </div>
-</main>
-    <footer >
-        <div className="footer">
-            <div className="socialMedia">
-                    must put icons here
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="socialMedia">
+                must put icons here
             </div>
             <p> &copy; 2022 SoftUni project</p>
-          </div>
+        </div>
     </footer>
 </body>
 
