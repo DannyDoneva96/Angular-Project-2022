@@ -90,10 +90,33 @@ align-items: center;}
     color:white;
     text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
-/*-------------------- main----------------------------------------------------- */
-
-
-
+/*-------------------- contact us ----------------------------------------------------- */
+ .cont-contact{
+    height: calc(100vh - 300px);
+    display: flex;
+    align-items: center;
+ }
+ .container-Contact{
+    width: 50%;
+    margin:auto;
+ }
+ form{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+ }
+ .formC input{
+    border:none;
+    border-bottom: 1px solid black;
+ }
+.sbm-btn{
+    width:50%;
+    margin:auto;
+    border-radius: 10px;
+    margin-top:1rem;
+    
+}
 /*-------------------- footer----------------------------------------------------- */
 .footer {
     color: rgb(0, 0, 0);
