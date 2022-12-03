@@ -91,10 +91,26 @@ align-items: center;}
     text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
 /*-------------------- menu ----------------------------------------------------- */
+.options{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    gap: 4rem;
+    border-bottom: 1px solid black;
+}
 
-.options img{
-width:150px;
+.options-container{
+width:180px;
+height: 200px;
 
+}
+.options-container img{
+   width:180px;
+}
+.options-label{
+    font-size: 24px;
+    transform: translate(+40%, +10%);
+    margin-bottom: 10px
 }
 /*-------------------- footer----------------------------------------------------- */
 .footer {
