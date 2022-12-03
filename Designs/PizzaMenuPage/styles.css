@@ -116,8 +116,18 @@ height: 200px;
 }
 
 
-    .options-label:hover{
-       font-size: 40px;
+.options-label:hover {
+       font-size: 50px;
+    }
+
+    main{
+        background: url("./pizza-images/bck/thisone.png") no-repeat center center ; 
+ 
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+height: 100vh;
     }
 
 /*-------------------- footer----------------------------------------------------- */
