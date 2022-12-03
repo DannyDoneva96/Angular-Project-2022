@@ -96,7 +96,6 @@ align-items: center;}
     justify-content:center;
     align-items:center;
     gap: 4rem;
-    border-bottom: 1px solid black;
 }
 
 .options-container{
@@ -106,12 +105,21 @@ height: 200px;
 }
 .options-container img{
    width:180px;
+   height: 160px;
+
 }
 .options-label{
     font-size: 24px;
     transform: translate(+40%, +10%);
-    margin-bottom: 10px
+    margin-bottom: 10px;
+    font-family: 'Caveat', cursive;
 }
+
+
+    .options-label:hover{
+       font-size: 40px;
+    }
+
 /*-------------------- footer----------------------------------------------------- */
 .footer {
     color: rgb(0, 0, 0);
