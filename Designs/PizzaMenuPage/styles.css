@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;700&display=swap');
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+    
+	font: inherit;
+	vertical-align: baseline;
+    
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+#header{
+    background-color:#ffffff;
+  border-bottom: 1px solid black;
+}
+ 
+.logo-nav{
+    width:200px;
+
+}
+
+.navbar{ 
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+   
+}
+.nav-links{ 
+    cursor: url("../../images/cursor-removebg-preview.png"), pointer;
+
+       gap: 60px;
+    display: flex;
+align-items: center;}
+
+.nav-links a{
+    margin-right: 15px;
+
+    text-shadow: 3px 3px 20px #000000,
+    -2px 1px 30px #000000;   
+     color:rgb(0, 0, 0);
+     font-size: 24px;
+ text-decoration: none;
+ font-family: 'Caveat', cursive;
+
+
+
+}
+.nav-links a:hover{
+    cursor: url("../../images/cursor-removebg-preview.png"), pointer;
+    color:white;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+/*-------------------- menu ----------------------------------------------------- */
+
+.options img{
+width:150px;
+
+}
+/*-------------------- footer----------------------------------------------------- */
+.footer {
+    color: rgb(0, 0, 0);
+    height: 200px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10px;
+    bottom:0;
+    width:100%;
+    border-top: 1px solid black;
+  }
+  
+  .socialMedia  {
+    color: rgb(0, 0, 0);
+    margin: 20px;
+    font-size: 70px;
+    cursor: pointer;
+  }
