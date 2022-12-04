@@ -140,14 +140,14 @@ height: 70vh;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 1.5rem;
     align-items: baseline;
 }
    
 
    .pizzaImg-container{
    
-    width: 400px;
+    width: 350px;
 
    }
 
@@ -159,7 +159,12 @@ height: 70vh;
     -moz-box-shadow: 2px 4px 54px 0px rgba(0,0,0,0.75);
     box-shadow: 2px 4px 54px 0px rgba(0,0,0,0.75);
     border-radius: 50%; */
-    width: 500px;
+    width: 400px;
+
+}
+.pizzaName{
+    font-family: 'Caveat', cursive;
+    font-size:38px;
 }
 /*-------------------- footer----------------------------------------------------- */
 .footer {
