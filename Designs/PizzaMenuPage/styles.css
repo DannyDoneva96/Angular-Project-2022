@@ -96,6 +96,7 @@ align-items: center;}
     justify-content:center;
     align-items:center;
     gap: 4rem;
+    padding:1rem;
 }
 
 .options-container{
@@ -121,6 +122,7 @@ height: 200px;
     }
 
     main{
+
         background: url("./pizza-images/bck/thisone.png") no-repeat center center ; 
  
  -webkit-background-size: cover;
