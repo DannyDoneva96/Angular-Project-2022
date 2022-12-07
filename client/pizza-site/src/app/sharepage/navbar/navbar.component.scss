@@ -15,7 +15,7 @@
    
 }
 .nav-links{ 
-    cursor: url("../../../images/cursor-removebg-preview.png"), pointer;
+    cursor: url("../../../assets/images/cursor-removebg-preview.png"), pointer;
 
        gap: 60px;
     display: flex;
@@ -42,7 +42,7 @@ align-items: center;}
  }
 
 .nav-links a:hover{
-    cursor: url("../../../images/cursor-removebg-preview.png"), pointer;
+    cursor: url("../../../assets/images/cursor-removebg-preview.png"), pointer;
     color:white;
     text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
