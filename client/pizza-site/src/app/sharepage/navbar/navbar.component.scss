@@ -34,6 +34,13 @@ align-items: center;}
 
 
 }
+
+//  This is not working and i cant figure out why
+ .nav-links.active-link{
+   color:rgb(255, 255, 255);
+      text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+ }
+
 .nav-links a:hover{
     cursor: url("../../../images/cursor-removebg-preview.png"), pointer;
     color:white;
