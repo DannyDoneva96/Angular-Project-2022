@@ -1,0 +1,43 @@
+.options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding: 1rem;
+}
+
+.options-container {
+    width: 180px;
+    height: 200px;
+
+}
+
+.options-container img {
+    width: 180px;
+    height: 160px;
+
+}
+
+.options-label {
+    font-size: 24px;
+    transform: translate(+40%, +10%);
+    margin-bottom: 10px;
+    font-family: 'Caveat', cursive;
+}
+
+
+.options-label:hover {
+    font-size: 50px;
+}
+
+main {
+
+    background: url("../../../assets/images/pizza-images/bck/thisone.png") no-repeat center center;
+    background-position: bottom;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 70vh;
+}
