@@ -39,5 +39,54 @@ main {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 70vh;
+    height: 100vh;
+}
+ /*-------------------- deals content----------------------------------------------------- */
+
+ .todaysDeals{
+    font-family: 'Caveat', cursive;
+    font-size:100px;
+    color: #FFFFFF;
+    text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
+    width:fit-content;
+    margin:0 auto;
+    align-self: center;
+    margin-top: 30px;
+ }
+
+.pizzas-sec-container{  
+    width: 100%;
+    align-items: center;  
+    position:absolute;
+ bottom: 10px;
+   }
+.menu-section{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: baseline;
+}
+   
+
+   .pizzaImg-container{
+   
+    width: 350px;
+
+   }
+
+   .pizzaImg-container img{
+    width: 100%;
+   }
+   .pizzaImg-container :hover{
+    /* -webkit-box-shadow: 2px 4px 54px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 4px 54px 0px rgba(0,0,0,0.75);
+    box-shadow: 2px 4px 54px 0px rgba(0,0,0,0.75);
+    border-radius: 50%; */
+    width: 400px;
+
+}
+.pizzaName{
+    font-family: 'Caveat', cursive;
+    font-size:38px;
 }
