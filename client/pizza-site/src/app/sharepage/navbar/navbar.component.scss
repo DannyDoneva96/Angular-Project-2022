@@ -1,0 +1,41 @@
+#header{
+    background-color:#ffffff;
+  
+}
+ 
+.logo-nav{
+    width:200px;
+
+}
+
+.navbar{ 
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+   
+}
+.nav-links{ 
+    cursor: url("../../../images/cursor-removebg-preview.png"), pointer;
+
+       gap: 60px;
+    display: flex;
+align-items: center;}
+
+.nav-links a{
+    margin-right: 15px;
+
+    text-shadow: 3px 3px 20px #000000,
+    -2px 1px 30px #000000;   
+     color:rgb(0, 0, 0);
+     font-size: 24px;
+ text-decoration: none;
+ font-family: 'Caveat', cursive;
+
+
+
+}
+.nav-links a:hover{
+    cursor: url("../../../images/cursor-removebg-preview.png"), pointer;
+    color:white;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
