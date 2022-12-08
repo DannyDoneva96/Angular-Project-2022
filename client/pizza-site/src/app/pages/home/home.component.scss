@@ -46,7 +46,7 @@ margin:2rem 5rem;
     padding: 0.5rem;
     font-size: 30px;
     color:#fff;
-    background-color: rgba(255, 255, 255, 0.251);
+    background-color: rgba(255, 255, 255, 0.103);
     text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 
 }
@@ -56,7 +56,7 @@ margin:2rem 5rem;
 }
 
 .glow-on-hover {
-   
+    text-decoration: none;
     position: relative;
     z-index: 0;
     border-radius: 10px;

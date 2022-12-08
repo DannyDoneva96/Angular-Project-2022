@@ -5,7 +5,7 @@
  
 .logo-nav{
     width:200px;
-
+    cursor: url("../../../assets/images/cursor-removebg-preview.png"), pointer;
 }
 
 .navbar{ 
@@ -15,7 +15,7 @@
    
 }
 .nav-links{ 
-    cursor: url("../../../assets/images/cursor-removebg-preview.png"), pointer;
+   
 
        gap: 60px;
     display: flex;

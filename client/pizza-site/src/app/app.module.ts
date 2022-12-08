@@ -10,6 +10,9 @@ import { HomeComponent } from './pages/home/home.component';
 import { MenuComponent } from './pages/menu/menu.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { SwiperModule } from 'swiper/angular';
+import { LoginComponent } from './pages/login/login.component';
+import { OrdersComponent } from './pages/orders/orders.component';
 
 @NgModule({
   declarations: [
@@ -19,12 +22,15 @@ import { ContactComponent } from './pages/contact/contact.component';
     HomeComponent,
     MenuComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    LoginComponent,
+    OrdersComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     GoogleMapsModule,
+    SwiperModule
   ],
   providers: [],
   bootstrap: [AppComponent]
