@@ -3,7 +3,8 @@
  <div class="options">
     <div class="options-container">
         <p class="options-label">
-            Deals
+            <a routerLink="deals">Deals</a>
+            
         </p>
         <img src="../../../assets/images/pizza-images/icons-menu/320-3204667_pizza-pepperoni-png-transparent-png-removebg-preview.png"
             alt="">
@@ -11,25 +12,25 @@
     <div class="options-container">
 
         <p class="options-label">
-           <a>Pizza</a> 
+            <a routerLink="pizza">Pizza</a>
         </p>
         <img src="../../../assets/images/pizza-images/icons-menu/png-transparent-pizza-pizza-food-bread-removebg-preview.png" alt="">
     </div>
     <div class="options-container">
         <p class="options-label">
-            <a>Salad</a>
+            <a routerLink="salad">Salad</a>
         </p>
         <img src="../../../assets/images/pizza-images/icons-menu/salat-icon-removebg-preview.png" alt="">
     </div>
     <div class="options-container">
         <p class="options-label">
-            <a>Dessert</a>
+            <a routerLink="dessert">Dessert</a>
         </p>
         <img src="../../../assets/images/pizza-images/icons-menu/deserts.png" alt="">
     </div>
     <div class="options-container">
         <p class="options-label">
-           <a> Drinks</a>
+            <a routerLink="drinks">Drinks</a>
         </p>
         <img src="../../../assets/images/pizza-images/icons-menu/drinks-icon-removebg-preview.png" alt="">
 
@@ -44,9 +45,9 @@
 
     <section class = "menu-section">
          
-        <article *ngFor="let fd of foodData">
-            <div class="pizzaImg-container">
-                 <img src="{{fd.imgUrl}}" alt="">
+        <article  *ngFor="let fd of foodData;index as i">
+            <div *ngIf="i<=3"  class="pizzaImg-container">
+                <a [routerLink]="['/menu',fd.id]"> <img src="{{fd.imgUrl}}" alt=""></a>
             
             <h3 class="pizzaName">{{fd.name}}</h3></div>
       </article>

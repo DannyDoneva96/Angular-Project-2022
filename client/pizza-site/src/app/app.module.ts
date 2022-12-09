@@ -13,6 +13,10 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { SwiperModule } from 'swiper/angular';
 import { LoginComponent } from './pages/login/login.component';
 import { OrdersComponent } from './pages/orders/orders.component';
+import { ProductDetailsComponent } from './pages/product-details/product-details.component';
+import { DealsComponent } from './pages/products/deals/deals.component';
+import { PizzaComponent } from './pages/products/pizza/pizza.component';
+import { SaladComponent } from './pages/products/salad/salad.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +28,11 @@ import { OrdersComponent } from './pages/orders/orders.component';
     AboutComponent,
     ContactComponent,
     LoginComponent,
-    OrdersComponent
+    OrdersComponent,
+    ProductDetailsComponent,
+    DealsComponent,
+    PizzaComponent,
+    SaladComponent,
   ],
   imports: [
     BrowserModule,

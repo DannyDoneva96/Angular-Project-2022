@@ -5,10 +5,20 @@ import { MenuComponent } from './pages/menu/menu.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { LoginComponent } from './pages/login/login.component';
+import {ProductDetailsComponent} from './pages/product-details/product-details.component';
+
 
 const routes: Routes = [
   {path: '',component:HomeComponent},
   {path: 'menu',component:MenuComponent},
+
+  // {path: 'menu/deals',component:MenuComponent},
+  // {path: 'menu/pizza',component:MenuComponent},
+  // {path: 'menu/salad',component:MenuComponent},
+  // {path: 'menu/dessert',component:MenuComponent},
+  // {path: 'menu/drinks',component:MenuComponent},
+
+  {path: 'menu/:id',component:ProductDetailsComponent},
   {path: 'about',component:AboutComponent},
   {path: 'contact',component:ContactComponent},
   {path: 'login',component:LoginComponent},
