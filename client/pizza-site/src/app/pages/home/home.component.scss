@@ -106,20 +106,24 @@ margin:2rem 5rem;
 }
 
 .home-deliv-section>h2{
+    background-color: rgba(255, 255, 255, 0.838);
+
       font-size: 40px;
       font-family: 'Caveat';
       padding: 1rem;
       text-align: center;
-      color: #fff;
+      color: rgb(0, 0, 0);
       text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
 span{
+
     font-size: 56px;
     color: rgb(48, 145, 48);
     text-shadow: 1px 0 0 rgb(255, 255, 255), 0 -1px 0 rgb(255, 255, 255), 0 1px 0 rgb(255, 255, 255), -1px 0 0 #000;
 }
 .steps-container{
-    
+    background-color: rgba(255, 255, 255, 0.838);
+
     display: flex;
     justify-content: center;
     gap: 2rem;
@@ -127,7 +131,7 @@ span{
 .steps{
     text-align: center;
     width:30%;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.838);
     margin-bottom: 2rem;
     height:5rem;
     border-radius: 30px;
@@ -141,3 +145,28 @@ span{
     text-shadow: 1px 0 0 rgb(255, 255, 255), 0 -1px 0 rgb(255, 255, 255), 0 1px 0 rgb(255, 255, 255), -1px 0 0 #000;
 
 }
+.offer-of-the-day{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.838);
+
+}
+.img-container{
+    width: 400px;
+    margin: auto;
+}
+.dealOfDay{
+    color: rgb(48, 145, 48);
+    text-shadow: 1px 0 0 rgb(255, 255, 255), 0 -1px 0 rgb(255, 255, 255), 0 1px 0 rgb(255, 255, 255), -1px 0 0 #000;
+text-align: center;
+    font-size: 52px;
+    padding: 1rem;
+}
+
+.offer-of-the-day h3{
+    padding: 1rem;
+    font-weight: bold;
+    font-size:50px
+}
+.offer-of-the-day span{margin:18px}
+.scratch{text-decoration: line-through;
+font-size:40px}
