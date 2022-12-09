@@ -43,8 +43,14 @@
 <div class="pizzas-sec-container">
 
     <section class = "menu-section">
-
-        <article>
+         
+        <article *ngFor="let fd of foodData">
+            <div class="pizzaImg-container">
+                 <img src="{{fd.imgUrl}}" alt="">
+            
+            <h3 class="pizzaName">{{fd.name}}</h3></div>
+      </article>
+        <!-- <article>
               <div class="pizzaImg-container">
                    <img src="../../../assets/images/pizza-images/pizza/6651283_preview.png" alt="">
               
@@ -67,7 +73,7 @@
          <img src="../../../assets/images/pizza-images/pizza/png-transparent-pizza-margherita-italian-cuisine-dish-food-poultry-food-recipe-cheese-removebg-preview.png" alt="">
     
     <h3 class="pizzaName">Agrita</h3></div> 
-</article>
+</article> -->
 
     </section></div>
 

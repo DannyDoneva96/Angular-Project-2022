@@ -45,14 +45,15 @@ export class OrderDetailsService {
       quantity:'',
       imgUrl:'../../../assets/images/pizza-images/pizza/png-transparent-pizza-margherita-italian-cuisine-dish-food-poultry-food-recipe-cheese-removebg-preview.png',
       
-    }, { id:5,
-      category:'pizza',
-       name:'Frutti di Mare',
-description:'You can choose seafood such as scampi, squid, and mussels. Traditionally, the pizza is served without any cheese, as the seafood is placed on top of the dough and tomato sauce instead',
-      size:'',
-      price:'',
-      quantity:'',
-      imgUrl:'',
-    }
+    },
+//      { id:5,
+//       category:'pizza',
+//        name:'Frutti di Mare',
+// description:'You can choose seafood such as scampi, squid, and mussels. Traditionally, the pizza is served without any cheese, as the seafood is placed on top of the dough and tomato sauce instead',
+//       size:'',
+//       price:'',
+//       quantity:'',
+//       imgUrl:'',
+//     }
   ]
 }
