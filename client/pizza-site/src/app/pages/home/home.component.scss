@@ -1,6 +1,6 @@
 
-main{
-    background: url("../../../assets/images/pizza-bck-new.png") no-repeat center center fixed; 
+.main{
+    background: url("../../../assets/images/pizza-bck-new.png") no-repeat center center ; 
     
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -97,4 +97,47 @@ margin:2rem 5rem;
     left: 0;
     top: 0;
     border-radius: 10px;
+}
+
+.home-deliv-section{
+    background-image:url('../../../assets/images/pizza-bck-repeat.jpg');
+    background-color: rgba(48, 145, 48, 0.263);
+    height: fit-content;
+}
+
+.home-deliv-section>h2{
+      font-size: 40px;
+      font-family: 'Caveat';
+      padding: 1rem;
+      text-align: center;
+      color: #fff;
+      text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+span{
+    font-size: 56px;
+    color: rgb(48, 145, 48);
+    text-shadow: 1px 0 0 rgb(255, 255, 255), 0 -1px 0 rgb(255, 255, 255), 0 1px 0 rgb(255, 255, 255), -1px 0 0 #000;
+}
+.steps-container{
+    
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.steps{
+    text-align: center;
+    width:30%;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 2rem;
+    height:5rem;
+    border-radius: 30px;
+    border: 1px solid rgb(48,145,48);
+
+}
+
+.num{
+    font-size:66px;
+    color: rgb(48, 145, 48);
+    text-shadow: 1px 0 0 rgb(255, 255, 255), 0 -1px 0 rgb(255, 255, 255), 0 1px 0 rgb(255, 255, 255), -1px 0 0 #000;
+
 }
