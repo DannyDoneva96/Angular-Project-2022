@@ -1,1 +1,39 @@
-<p>product-details works!</p>
+
+<div class="product-details-container">
+
+<article  >
+    <div  *ngIf="productData" class="pizzaImg-container">
+        <img src="{{productData.imgUrl}}" alt=""> 
+    </div>
+
+    <form>
+            <h1 class="pizzaName">{{productData.name}}</h1>
+            <p>{{productData.description}}</p>
+            
+            <fieldset>
+                <legend>Select size</legend>
+            
+                <div>
+                  <input type="radio" id="small" name="drone" value="small"
+                         checked>
+                  <label for="small">Small</label>
+                </div>
+            
+                <div>
+                  <input type="radio" id="medium" name="drone" value="medium">
+                  <label for="medium">Medium</label>
+                </div>
+            
+                <div>
+                  <input type="radio" id="large" name="drone" value="large">
+                  <label for="large">Large</label>
+                </div>
+                <div>
+                    <input type="radio" id="xxl" name="xxl" value="xxl">
+                    <label for="xxl">XXL</label>
+                  </div>
+            </fieldset>
+    </form>
+</article>
+
+</div>
