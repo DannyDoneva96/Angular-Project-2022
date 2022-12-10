@@ -97,6 +97,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "pizza-site:build:production",
+            "firebaseProject": "donevis-pizzeria",
+            "firebaseHostingSite": "donevis-pizzeria"
+          }
         }
       }
     }

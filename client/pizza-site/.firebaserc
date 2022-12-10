@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "donevis-pizzeria": {
+      "hosting": {
+        "pizza-site": [
+          "donevis-pizzeria"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "donevis-pizzeria"
+  }
+}
