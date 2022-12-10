@@ -6,11 +6,12 @@
         </div>
 
         <div class="nav-links">
-            <a routerLink="" routerLinkActive="active-link" [routerLinkActiveOptions]={exact:true}> Home </a>
+            <a routerLink="" routerLinkActive="active-link" > Home </a>
             <a routerLink="menu" routerLinkActive="active-link"> Menu </a>
             <a routerLink="about" routerLinkActive="active-link"> About </a>
             <a routerLink="contact" routerLinkActive="active-link"> Contact </a>
             <a routerLink="login" routerLinkActive="active-link"> Login </a>
+            <a routerLink="" routerLinkActive="active-link" (click)="logout()"> Logout </a>
 
         </div>
       

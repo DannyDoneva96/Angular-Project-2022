@@ -6,12 +6,12 @@
             <form action="">
                 <div>
                     <i class="fa-regular fa-user"></i>
-                    <input class='inp-log' type="text" name="username" placeholder="username" id="username">
+                    <input class='inp-log' type="text" name="email" placeholder="email" id="email" [(ngModel)]="email">
                 </div>
                 <div><i class="fa-solid fa-lock"></i>
-                    <input class='inp-log' type="password" name="password" placeholder="password" id="password">
+                    <input class='inp-log' type="password" name="password" placeholder="password" id="password" [(ngModel)]="password"> >
                 </div>
-                <button class='btn-login'type="submit">LOGIN</button>
+                <button class='btn-login'type="submit" (click)="login()">LOGIN</button>
             </form>
         </section>
     </div>
