@@ -24,7 +24,8 @@ import { provideAuth,getAuth } from '@angular/fire/auth';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { provideStorage,getStorage } from '@angular/fire/storage';
 import { RegisterComponent } from './pages/register/register.component';
-import {FormsModule}  from '@angular/forms'
+import {FormsModule}  from '@angular/forms';
+import { MessagesComponent } from './pages/messages/messages.component'
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import {FormsModule}  from '@angular/forms'
     PizzaComponent,
     SaladComponent,
     RegisterComponent,
+    MessagesComponent,
   ],
   imports: [
     BrowserModule,
