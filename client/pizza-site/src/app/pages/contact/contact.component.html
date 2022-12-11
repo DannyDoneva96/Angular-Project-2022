@@ -5,15 +5,15 @@
     <img src="../../../assets/images/Donevi's Pizzeria.png" alt="">
    </div>
    <div class="formC">
-    <form >
+    <form #contactForm="ngForm" (ngSubmit)="addData(contactForm.value)">
         <label for="fname">Full Name</label>
-        <input type="text" name="fname" >
+        <input type="text" name="fname" ngModel>
 
         <label for="email">Email</label>
-        <input type="text" name="email" >
+        <input type="text" name="email" ngModel >
 
         <label for="message">Message</label>
-        <textarea type="text" name="message" ></textarea>
+        <textarea type="text" name="message" ngModel ></textarea>
           
         <button class="sbm-btn" type="submit" name="btn">SEND</button>
     </form>

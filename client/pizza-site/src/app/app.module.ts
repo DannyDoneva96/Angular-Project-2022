@@ -3,29 +3,34 @@ import { BrowserModule } from '@angular/platform-browser';
 import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { GoogleMapsModule } from '@angular/google-maps';
+import {FormsModule}  from '@angular/forms';
+
 import { AppComponent } from './app.component';
+
 import { NavbarComponent } from './sharepage/navbar/navbar.component';
 import { FooterComponent } from './sharepage/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
 import { MenuComponent } from './pages/menu/menu.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
-import { SwiperModule } from 'swiper/angular';
+// import { SwiperModule } from 'swiper/angular';
 import { LoginComponent } from './pages/login/login.component';
 import { OrdersComponent } from './pages/orders/orders.component';
 import { ProductDetailsComponent } from './pages/product-details/product-details.component';
 import { DealsComponent } from './pages/products/deals/deals.component';
 import { PizzaComponent } from './pages/products/pizza/pizza.component';
 import { SaladComponent } from './pages/products/salad/salad.component';
+import { MessagesComponent } from './pages/messages/messages.component'
+import { RegisterComponent } from './pages/register/register.component';
+
 
 import {AngularFireModule} from '@angular/fire/compat'
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { provideAuth,getAuth } from '@angular/fire/auth';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { provideStorage,getStorage } from '@angular/fire/storage';
-import { RegisterComponent } from './pages/register/register.component';
-import {FormsModule}  from '@angular/forms';
-import { MessagesComponent } from './pages/messages/messages.component'
+
+
 
 @NgModule({
   declarations: [
@@ -49,7 +54,7 @@ import { MessagesComponent } from './pages/messages/messages.component'
     BrowserModule,
     AppRoutingModule,
     GoogleMapsModule,
-   SwiperModule,
+  //  SwiperModule,
 
     AngularFireModule.initializeApp(environment.firebase),
     FormsModule,
