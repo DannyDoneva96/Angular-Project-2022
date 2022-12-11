@@ -24,10 +24,10 @@ export class ContactComponent {
     const dbInstance = collection(this.firestore, 'messages');
     addDoc(dbInstance, value)
       .then(() => {
-        alert('Data Sent')
+        alert('Your Message was successfully send! Thank you!')
       })
       .catch((err) => {
-        
+
         alert(err.message)
       })
   }

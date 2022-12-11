@@ -1,24 +1,43 @@
 <div class="container-messages">
 
 <!-- 
+    <ul>
+        <li *ngFor="let item of data">
+          {{ item.email }}
+          {{ item.name }}
+          {{ item.message }}
+        
+      
+          <button (click)="deleteData(item.id)">
+            Delete
+          </button>
+        </li>
+      </ul> -->
+
     <table>
         <tr class="main-tr">
-            <th class="heading name">Full name</th>
-            <th class="heading em">email</th>
-            <th class="heading mes">Message</th>
+            <th class="name">Full name</th>
+            <th class="email">email</th>
+            <th class="message">Message</th>
+            <th class="delete">Delete</th>
+
         </tr>
-        <tr>
-            <td>maria maria </td>
-            <td>maria.abv.bg</td>
-            <td> Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi itaque ex quidem praesentium, magni
-                error est blanditiis voluptatum aspernatur deserunt minus culpa, numquam possimus unde aliquid quae
-                quam. Aspernatur, iure.</td>
+
+        <tr *ngFor="let item of data">
+            <td class="tdname">{{ item.fname }}</td> 
+
+                       <td class="tdemail"> {{ item.email }}</td>
+
+            <td class="tdmes"> {{ item.message }}</td>
+            <button class="del-btn" (click)="deleteData(item.id)">
+            Delete
+          </button>
         </tr>
 
     </table>
- -->
 
- <div class="parent">
+
+ <!-- <div class="parent">
     <div class="div1 name"> Full Name</div>
     <div class="div2 email">Email </div>
     <div class="div3 message">Message</div>
@@ -29,6 +48,6 @@
     <div class="div8"> boyana@abv.bg</div>
     <div class="div9"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus accusantium placeat ex laudantium quod excepturi at ullam exercitationem, beatae minus odio, ducimus recusandae consequuntur quibusdam quis porro quisquam non reiciendis.</div>
    
-    </div>
+    </div> -->
 
 </div>
