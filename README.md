@@ -31,11 +31,12 @@ The project was generated with [Angular CLI](https://github.com/angular/angular-
 | See Produc Details Page        | ✅   | ✅   |
 | Add message in Contact page    | ✅   | ✅   |
 | See Messages in Messages page  | ✅   | ❌   |
-
 | Login                          | ❌   | ✅   |
 | Register                       | ❌   | ✅   |
 | Logout                         | ✅   | ❌   |
 
+
+TODO :
 | Create new product             | ✅   | ❌   |
 | Edit  product                  | ✅   | ❌   |
 | Delete product                 | ✅   | ❌   |
