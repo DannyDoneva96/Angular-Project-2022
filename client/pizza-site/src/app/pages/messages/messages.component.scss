@@ -39,8 +39,17 @@ td,tr{
     margin-right: 3rem;
 }
 
-div{border-bottom: 2px solid rgb(6, 120, 6);}
+// div{border-bottom: 2px solid rgb(6, 120, 6);}
 
 .container-messages{
     border:none;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+}
+ tr:nth-child(even){background-color: rgba(6, 120, 6, 0.591)}
+
+ tr:hover {background-color: #ddd;}
+
+.tdname{
+    padding: 8px;
 }
