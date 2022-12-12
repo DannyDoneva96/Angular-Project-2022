@@ -28,7 +28,7 @@ export class MenuComponent  {
   // }
 
   getData() {
-    const dbInstance = collection(this.firestore, 'products');
+    const dbInstance = collection(this.firestore, 'mostOrdered');
     getDocs(dbInstance)
       .then((response) => {
         this.data = [...response.docs.map((item) => {

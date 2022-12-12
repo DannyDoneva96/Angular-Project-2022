@@ -1,58 +1,62 @@
- <!--------------------- this is the menu ---------------------------->
- <main>
- <div class="options">
-    <div class="options-container">
-        <p class="options-label">
-            <a routerLink="deals">Deals</a>
-            
-        </p>
-        <img src="../../../assets/images/pizza-images/icons-menu/320-3204667_pizza-pepperoni-png-transparent-png-removebg-preview.png"
-            alt="">
+<!--------------------- this is the menu ---------------------------->
+<main>
+    <div class="options">
+        <div class="options-container">
+            <p class="options-label">
+                <a routerLink="deals">Deals</a>
+
+            </p>
+            <img src="../../../assets/images/pizza-images/icons-menu/320-3204667_pizza-pepperoni-png-transparent-png-removebg-preview.png"
+                alt="">
+        </div>
+        <div class="options-container">
+
+            <p class="options-label">
+                <a routerLink="pizza">Pizza</a>
+            </p>
+            <img src="../../../assets/images/pizza-images/icons-menu/png-transparent-pizza-pizza-food-bread-removebg-preview.png"
+                alt="">
+        </div>
+        <div class="options-container">
+            <p class="options-label">
+                <a routerLink="salad">Salad</a>
+            </p>
+            <img src="../../../assets/images/pizza-images/icons-menu/salat-icon-removebg-preview.png" alt="">
+        </div>
+        <div class="options-container">
+            <p class="options-label">
+                <a routerLink="dessert">Dessert</a>
+            </p>
+            <img src="../../../assets/images/pizza-images/icons-menu/deserts.png" alt="">
+        </div>
+        <div class="options-container">
+            <p class="options-label">
+                <a routerLink="drinks">Drinks</a>
+            </p>
+            <img src="../../../assets/images/pizza-images/icons-menu/drinks-icon-removebg-preview.png" alt="">
+
+        </div>
     </div>
-    <div class="options-container">
-
-        <p class="options-label">
-            <a routerLink="pizza">Pizza</a>
-        </p>
-        <img src="../../../assets/images/pizza-images/icons-menu/png-transparent-pizza-pizza-food-bread-removebg-preview.png" alt="">
-    </div>
-    <div class="options-container">
-        <p class="options-label">
-            <a routerLink="salad">Salad</a>
-        </p>
-        <img src="../../../assets/images/pizza-images/icons-menu/salat-icon-removebg-preview.png" alt="">
-    </div>
-    <div class="options-container">
-        <p class="options-label">
-            <a routerLink="dessert">Dessert</a>
-        </p>
-        <img src="../../../assets/images/pizza-images/icons-menu/deserts.png" alt="">
-    </div>
-    <div class="options-container">
-        <p class="options-label">
-            <a routerLink="drinks">Drinks</a>
-        </p>
-        <img src="../../../assets/images/pizza-images/icons-menu/drinks-icon-removebg-preview.png" alt="">
-
-    </div>
-</div>
-<!-------------------- Offers menu ------------------------------->
-<div class="todaysDeals">Most Famous...</div>
+    <!-------------------- Offers menu ------------------------------->
+    <div class="todaysDeals">Most Famous...</div>
 
 
 
-<div class="pizzas-sec-container">
+    <div class="pizzas-sec-container">
 
-    <section class = "menu-section">
-         
-        <article  *ngFor="let fd of data;index as i">
-            <div *ngIf="i<=3"  class="pizzaImg-container">
-                <a [routerLink]="['/menu',fd.id]"> <img src="{{fd.imgUrl}}" alt=""></a>
-            
-            <h3 class="pizzaName">{{fd.name}}</h3></div>
-      </article>
+        <section class="menu-section">
 
-        <!-- <article>
+            <article *ngFor="let fd of data;index as i"  >
+                <div *ngIf="i<=3" class="pizzaImg-container">
+                    <!-- <a [routerLink]="['/menu',fd.id]"> </a> -->
+                    <!-- <img src="../../../../assets/images/pizza-images/deals/morskidarove-ken-cheesecake.png">  -->
+                    <img src="{{fd.imgUrl}}" alt="">
+                   
+                    <h3 class="pizzaName">{{fd.name}}</h3>
+                </div>
+            </article>
+
+            <!-- <article>
               <div class="pizzaImg-container">
                    <img src="../../../assets/images/pizza-images/pizza/6651283_preview.png" alt="">
               
@@ -77,7 +81,8 @@
     <h3 class="pizzaName">Agrita</h3></div> 
 </article> -->
 
-    </section></div>
+        </section>
+    </div>
 
 
 
