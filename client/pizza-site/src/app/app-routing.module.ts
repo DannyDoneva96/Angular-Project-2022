@@ -10,16 +10,23 @@ import { LoginComponent } from './pages/login/login.component';
 import {ProductDetailsComponent} from './pages/product-details/product-details.component';
 import { RegisterComponent } from './pages/register/register.component';
 
+import {DealsComponent} from './pages/products/deals/deals.component';
+import {PizzaComponent} from './pages/products/pizza/pizza.component';
+import {DrinksComponent} from './pages/products/drinks/drinks.component';
+import {SaladComponent} from './pages/products/salad/salad.component';
+import {DessertComponent} from './pages/products/dessert/dessert.component';
+
+
 const routes: Routes = [
   {path: '',component:HomeComponent},
   {path: 'menu',component:MenuComponent},
   {path: 'messages',component:MessagesComponent},
 
-  // {path: 'menu/deals',component:MenuComponent},
-  // {path: 'menu/pizza',component:MenuComponent},
-  // {path: 'menu/salad',component:MenuComponent},
-  // {path: 'menu/dessert',component:MenuComponent},
-  // {path: 'menu/drinks',component:MenuComponent},
+  {path: 'menu/deals',component:DealsComponent},
+  {path: 'menu/pizza',component:PizzaComponent},
+  {path: 'menu/salad',component:SaladComponent},
+  {path: 'menu/dessert',component:DessertComponent},
+  {path: 'menu/drinks',component:DrinksComponent},
 
   {path: 'menu/:id',component:ProductDetailsComponent},
   {path: 'about',component:AboutComponent},

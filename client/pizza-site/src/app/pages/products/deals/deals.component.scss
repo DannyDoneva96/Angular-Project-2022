@@ -1,0 +1,101 @@
+a{
+    text-decoration: none;
+    color: black
+}
+.options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding: 1rem;
+}
+
+.options-container {
+    width: 180px;
+    height: 200px;
+
+}
+
+.options-container img {
+    width: 180px;
+    height: 160px;
+
+}
+
+.options-label {
+    font-size: 24px;
+    transform: translate(+40%, +10%);
+    margin-bottom: 10px;
+    font-family: 'Caveat', cursive;
+}
+
+
+.options-label:hover {
+    font-size: 50px;
+}
+
+main {
+
+    background: url("../../../../assets/images/pizza-images/bck/thisone.png") no-repeat center center;
+    background-position: bottom;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+}
+ /*-------------------- deals content----------------------------------------------------- */
+
+ .todaysDeals{
+    font-family: 'Caveat', cursive;
+    font-size:100px;
+    color: #FFFFFF;
+    text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
+    width:fit-content;
+    margin:0 auto;
+    align-self: center;
+    margin-top: 30px;
+ }
+
+.pizzas-sec-container{  
+    width: 100%;
+    align-items: center;  
+    position:absolute;
+ bottom: 10px;
+   }
+.menu-section{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: baseline;
+}
+   
+
+   .pizzaImg-container {
+   
+    // width: 300px;
+    // height: 300px
+
+   }
+
+   .pizzaImg-container img{
+    width: 300px;
+    // height: 300px   
+}
+
+   .pizzaImg-container img:hover{
+    /* -webkit-box-shadow: 2px 4px 54px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 4px 54px 0px rgba(0,0,0,0.75);
+    box-shadow: 2px 4px 54px 0px rgba(0,0,0,0.75);
+    border-radius: 50%; */
+    width: 400px;
+
+}
+.pizzaName{
+    font-family: 'Caveat', cursive;
+    font-size:38px;
+}
+
+

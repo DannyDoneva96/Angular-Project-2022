@@ -29,6 +29,8 @@ import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { provideAuth,getAuth } from '@angular/fire/auth';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { provideStorage,getStorage } from '@angular/fire/storage';
+import { DessertComponent } from './pages/products/dessert/dessert.component';
+import { DrinksComponent } from './pages/products/drinks/drinks.component';
 
 
 
@@ -49,6 +51,8 @@ import { provideStorage,getStorage } from '@angular/fire/storage';
     SaladComponent,
     RegisterComponent,
     MessagesComponent,
+    DessertComponent,
+    DrinksComponent,
   ],
   imports: [
     BrowserModule,

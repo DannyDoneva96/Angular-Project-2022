@@ -37,7 +37,7 @@
     </div>
 </div>
 <!-------------------- Offers menu ------------------------------->
-<div class="todaysDeals">Today's Deals...</div>
+<div class="todaysDeals">Most Famous...</div>
 
 
 
@@ -45,12 +45,13 @@
 
     <section class = "menu-section">
          
-        <article  *ngFor="let fd of foodData;index as i">
+        <article  *ngFor="let fd of data;index as i">
             <div *ngIf="i<=3"  class="pizzaImg-container">
                 <a [routerLink]="['/menu',fd.id]"> <img src="{{fd.imgUrl}}" alt=""></a>
             
             <h3 class="pizzaName">{{fd.name}}</h3></div>
       </article>
+
         <!-- <article>
               <div class="pizzaImg-container">
                    <img src="../../../assets/images/pizza-images/pizza/6651283_preview.png" alt="">
