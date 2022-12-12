@@ -1,1 +1,59 @@
-<p>dessert works!</p>
+<!--------------------- this is the menu ---------------------------->
+<main>
+    <div class="options">
+       <div class="options-container">
+           <p class="options-label">
+               <a href="/menu/deals">Deals</a>
+               
+           </p>
+           <img src="../../../assets/images/pizza-images/icons-menu/320-3204667_pizza-pepperoni-png-transparent-png-removebg-preview.png"
+               alt="">
+       </div>
+       <div class="options-container">
+   
+           <p class="options-label">
+               <a href="/menu/pizza">Pizza</a>
+           </p>
+           <img src="../../../assets/images/pizza-images/icons-menu/png-transparent-pizza-pizza-food-bread-removebg-preview.png" alt="">
+       </div>
+       <div class="options-container">
+           <p class="options-label">
+               <a href="/menu/salad">Salad</a>
+           </p>
+           <img src="../../../assets/images/pizza-images/icons-menu/salat-icon-removebg-preview.png" alt="">
+       </div>
+       <div class="options-container">
+           <p class="options-label">
+               <a href="/menu/dessert">Dessert</a>
+           </p>
+           <img src="../../../assets/images/pizza-images/icons-menu/deserts.png" alt="">
+       </div>
+       <div class="options-container">
+           <p class="options-label">
+               <a href="/menu/drinks">Drinks</a>
+           </p>
+           <img src="../../../assets/images/pizza-images/icons-menu/drinks-icon-removebg-preview.png" alt="">
+   
+       </div>
+   </div>
+   <!-------------------- Offers menu ------------------------------->
+   <div class="todaysDeals">Today's Deals...</div>
+   
+   
+   
+   <div class="pizzas-sec-container">
+   
+       <section class = "menu-section">
+            
+           <article  *ngFor="let fd of data;index as i">
+               <div *ngIf="i<=3"  class="pizzaImg-container">
+                   <a [routerLink]="['/menu',fd.id]"> <img src="{{fd.imgUrl}}" alt=""></a>
+                   <!-- <img src="../../../../assets/images/pizza-images/deals/morskidarove-ken-cheesecake.png">  -->
+               <h3 class="pizzaName">{{fd.name}}</h3></div>
+         </article>
+
+       
+       </section></div>
+   
+   
+   
