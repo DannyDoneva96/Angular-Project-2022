@@ -4,16 +4,31 @@
             
             <img class="logo-nav" src="../../../assets/images/logo-nav-new.png" />
         </div>
-
-        <div class="nav-links">
+<!--NOT AUTH-->
+           
+        <div class="nav-links" *ngIf="auth.isLoggedIn==false">
             <a routerLink="" routerLinkActive="active-link" > Home </a>
             <a routerLink="menu" routerLinkActive="active-link"> Menu </a>
             <a routerLink="about" routerLinkActive="active-link"> About </a>
             <a routerLink="contact" routerLinkActive="active-link"> Contact </a>
             <a routerLink="login" routerLinkActive="active-link"> Login </a>
-            <a routerLink="" routerLinkActive="active-link" (click)="logout()"> Logout </a>
+            <a routerLink="login" routerLinkActive="active-link"> Register </a>
+            <a routerLink="contact" routerLinkActive="active-link"><i class="fa-solid fa-cart-plus"></i>  </a>
 
         </div>
-      
+        <!--AUTH-->
+
+        <div class="nav-links" *ngIf="auth.isLoggedIn==true">
+            <a routerLink="" routerLinkActive="active-link" > Home </a>
+            <a routerLink="menu" routerLinkActive="active-link"> Menu </a>
+            <a routerLink="about" routerLinkActive="active-link"> About </a>
+            <a routerLink="contact" routerLinkActive="active-link"> Contact </a>
+
+            <a routerLink="messages" routerLinkActive="active-link"> Messages </a>
+
+            <a routerLink="" routerLinkActive="active-link" (click)="logout()"> Logout </a>
+            <a routerLink="contact" routerLinkActive="active-link"><i class="fa-solid fa-cart-plus"></i>  </a>
+
+        </div>
     </div>
 </header>

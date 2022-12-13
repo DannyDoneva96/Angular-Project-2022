@@ -15,8 +15,9 @@ export class ProductDetailsComponent implements OnInit {
   getId:any
   productData:any
    ngOnInit(): void {
+    
     this.getId = this.param.snapshot.paramMap.get('id');
-    // console.log(this.getId);
+    console.log(this.getId);
     if (this.getId){
       this.service.foodDetails.filter((product:any) =>{
         if(product.id==this.getId){
