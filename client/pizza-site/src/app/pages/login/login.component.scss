@@ -1,14 +1,16 @@
 .container-login {
-    background-image: url('../../../assets/images/ll.jpg');
-    background-size: cover;
+    background-color: rgb(211, 211, 211);
     height: 65vh;
     margin: 0 auto;
     text-align: center;
 }
+p{
+    font-size:2rem;
+    color: red;
+}
 
 .content-login {
-    transform: translate(0%, 40%);
-}
+padding-top: 3rem;}
 
 .section-login {
     width: 500px;

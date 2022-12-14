@@ -1,0 +1,46 @@
+.container-login {
+    background-color: rgb(211, 211, 211);
+    height: 65vh;
+    margin: 0 auto;
+    text-align: center;
+}
+p{
+    font-size:2rem;
+    color: red;
+}
+
+
+.section-login {
+    width: 500px;
+    padding: 2rem;
+    border-radius: 30px;
+    background-color: #a1a1a17a;
+    margin: 0 auto
+}
+.section-login>h1{
+    font-size: 30px;
+    font-family: Caveat;
+    color: #fff;
+text-shadow: 1px 3px 0 #0707076e, 1px 13px 5px ;
+padding:1rem
+}
+
+.section-login>img {
+    width: 120px;
+    border: 1px solid;
+    border-radius: 50%;
+    height: 120px;
+}
+
+.btn-login{
+    border-radius: 15px;
+    width: 30%;
+    margin:1rem;
+
+}
+.inp-log{
+    border:none;
+    border-bottom: 1px solid black;
+    margin:0.5rem;
+    background-color: transparent
+}

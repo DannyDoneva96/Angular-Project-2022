@@ -31,6 +31,7 @@ const routes: Routes = [
   {path: 'menu/:id',component:ProductDetailsComponent},
   {path: 'about',component:AboutComponent},
   {path: 'contact',component:ContactComponent},
+
   {path: 'login',component:LoginComponent},
   {path: 'register',component:RegisterComponent},
 
