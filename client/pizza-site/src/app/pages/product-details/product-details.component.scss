@@ -15,11 +15,11 @@
 
 
 .pizzaImg-container img{
-    width:100%
+    width:400px
 }
 
 .pizzaImg-container{
-    max-width:800px
+   width:400px
 }
 
 
@@ -64,6 +64,8 @@ legend{
     font-size:30px
 }
 .descr{
+    font-weight:bold;
+    color:red;
     margin: 0.5rem;
 }
 button{
