@@ -50,7 +50,7 @@
                 <div *ngIf="i<=3" class="pizzaImg-container">
                     <!-- <a [routerLink]="['/menu',fd.id]"> </a> -->
                     <!-- <img src="../../../../assets/images/pizza-images/deals/morskidarove-ken-cheesecake.png">  -->
-                    <img src="{{fd.imgUrl}}" alt="">
+                    <a [routerLink]="['/menu/mostOrdered/',fd.id]"> <img src="{{fd.imgUrl}}" alt=""></a>
                    
                     <h3 class="pizzaName">{{fd.name}}</h3>
                 </div>
