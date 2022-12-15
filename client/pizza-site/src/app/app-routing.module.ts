@@ -27,8 +27,9 @@ const routes: Routes = [
   {path: 'menu/salad',component:SaladComponent},
   {path: 'menu/dessert',component:DessertComponent},
   {path: 'menu/drinks',component:DrinksComponent},
+  {path: 'menu/:category/:id',component:ProductDetailsComponent},
 
-  {path: 'menu/:id',component:ProductDetailsComponent},
+  // {path: 'menu/:id',component:ProductDetailsComponent},
   {path: 'about',component:AboutComponent},
   {path: 'contact',component:ContactComponent},
 

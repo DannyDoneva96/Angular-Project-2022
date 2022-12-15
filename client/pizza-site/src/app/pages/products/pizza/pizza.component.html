@@ -47,7 +47,7 @@
             
            <article  *ngFor="let fd of data;index as i">
                <div *ngIf="i<=3"  class="pizzaImg-container">
-                   <a [routerLink]="['/menu',fd.id]"> <img src="{{fd.imgUrl}}" alt=""></a>
+                   <a [routerLink]="['/menu/pizza/',fd.id]"> <img src="{{fd.imgUrl}}" alt=""></a>
                    <!-- <img src="../../../../assets/images/pizza-images/deals/morskidarove-ken-cheesecake.png">  -->
                <h3 class="pizzaName">{{fd.name}}</h3></div>
          </article>

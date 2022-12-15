@@ -2,13 +2,13 @@
 <div class="product-details-container">
 
 <article  >
-    <div  *ngIf="productData" class="pizzaImg-container">
-        <img src="{{productData.imgUrl}}" alt=""> 
+    <div  *ngIf="pizza" class="pizzaImg-container">
+        <img src="{{pizza.imgUrl}}" alt=""> 
     </div>
 
     <form>
-            <h1 class="pizzaName">{{productData.name}}</h1>
-            <p>{{productData.description}}</p>
+            <h1 class="pizzaName">{{pizza.name}}</h1>
+            <p>{{pizza.description}}</p>
             
             <fieldset>
                 <legend>Select size</legend>

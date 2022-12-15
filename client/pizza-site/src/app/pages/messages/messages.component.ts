@@ -31,6 +31,7 @@ export class MessagesComponent {
         })]
       })
   }
+  
 
   deleteData(id: string) {
     const dataToDelete = doc(this.firestore, 'messages', id);
