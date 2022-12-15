@@ -42,6 +42,7 @@ export class ProductDetailsComponent {
   public data: any = []
   getID : any =''
   pizza:any = ''
+  price:any = ''
 
   constructor(private param: ActivatedRoute, public firestore: Firestore) {
     this.getData()
