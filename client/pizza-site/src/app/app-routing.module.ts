@@ -15,12 +15,12 @@ import {PizzaComponent} from './pages/products/pizza/pizza.component';
 import {DrinksComponent} from './pages/products/drinks/drinks.component';
 import {SaladComponent} from './pages/products/salad/salad.component';
 import {DessertComponent} from './pages/products/dessert/dessert.component';
-
-
+import {OrdersComponent} from './pages/orders/orders.component'
 const routes: Routes = [
   {path: '',component:HomeComponent},
   {path: 'menu',component:MenuComponent},
   {path: 'messages',component:MessagesComponent},
+  {path: 'orders',component:OrdersComponent},
 
   {path: 'menu/deals',component:DealsComponent},
   {path: 'menu/pizza',component:PizzaComponent},
