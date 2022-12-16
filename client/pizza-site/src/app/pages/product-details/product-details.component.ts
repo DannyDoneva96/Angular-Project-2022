@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { Router } from '@angular/router';
+
 import { OrderDetailsService } from 'src/app/services/order-details.service'
 import {
   addDoc,
@@ -17,6 +19,7 @@ import {
   styleUrls: ['./product-details.component.scss']
 })
 export class ProductDetailsComponent {
+
 
   //   constructor(private param:ActivatedRoute,private service:OrderDetailsService){
 
@@ -40,14 +43,27 @@ export class ProductDetailsComponent {
 
   getCategory: any = ''
   public data: any = []
-  getID : any =''
-  pizza:any = ''
-  price:any = ''
+  getID: any = ''
+  pizza: any = ''
+  price: any = ''
 
-  constructor(private param: ActivatedRoute, public firestore: Firestore) {
+  constructor(private param: ActivatedRoute, public firestore: Firestore,public router:Router) {
     this.getData()
   }
 
+  addData(value: any) {
+    const dbInstance = collection(this.firestore, 'orders');
+    addDoc(dbInstance, value)
+      .then(() => {
+        alert('Your Order was successfully send! Thank you!')
+        this.router.navigate(['/menu']);
+
+      })
+      .catch((err) => {
+
+        alert(err.message)
+      })
+  }
   getData() {
 
     this.getCategory = this.param.snapshot.paramMap.get('category');
@@ -59,25 +75,25 @@ export class ProductDetailsComponent {
         this.data = [...response.docs.map((item) => {
           return { ...item.data(), id: item.id }
         })]
-         console.log(this.data ,"first"
-          );
+        console.log(this.data, "first"
+        );
 
-          if (this.data) {
-          
+        if (this.data) {
+
 
           this.data.forEach((product: any) => {
-            
-            if(product.id === this.getID){
-             return  this.pizza = product
-            }
-                  
-            })
-          }
-        
-      })
-     
 
-    
+            if (product.id === this.getID) {
+              return this.pizza = product
+            }
+
+          })
+        }
+
+      })
+
+
+
   }
 
 

@@ -6,35 +6,35 @@
         <img src="{{pizza.imgUrl}}" alt=""> 
     </div>
 
-    <form>
-            <h1 class="productName">{{pizza.name}}</h1>
-            <p class="descr">{{pizza.description}}</p>
-            
+    <form #orderForm="ngForm" (ngSubmit)="addData(orderForm.value)">
+            <h1 name='productName'  class="productName" [(ngModel)]="pizza.name">{{pizza.name}}</h1 >
+            <p  name="description"  class="descr">{{pizza.description}}</p>
+
             <fieldset>
                 <legend>Select size</legend>
             
                 <div>
                   <input type="radio" id="small" name="size" value="small"
-                         checked>
+                         checked ngModel>
                   <label for="small">Small</label>
                 </div>
             
                 <div>
-                  <input type="radio" id="medium" name="size" value="medium">
+                  <input type="radio" id="medium" name="size" value="medium" ngModel>
                   <label for="medium">Medium</label>
                 </div>
             
                 <div>
-                  <input type="radio" id="large" name="size" value="large">
+                  <input type="radio" id="large" name="size" value="large" ngModel>
                   <label for="large">Large</label>
                 </div>
                 <div>
-                    <input type="radio" id="xxl" name="size" value="xxl">
+                    <input type="radio" id="xxl" name="size" value="xxl" ngModel>
                     <label for="xxl">XXL</label>
                   </div>
             </fieldset>
-
-            <p class="cost">That will cost:<span>{{pizza.price}}$</span></p>
+             
+            <p class="cost">That will cost:<span [(ngModel)]="pizza.price" name="price">{{pizza.price}}$</span></p >
             <button>Add to cart</button>
 
     </form>

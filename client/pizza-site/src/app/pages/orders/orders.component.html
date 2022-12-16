@@ -1,11 +1,11 @@
 
 
  <!-- Admin -->
- <div class="container">
-<h1 *ngIf="this.isAdmine==true">Welcome Owner</h1>
- <div class="order">
-    <p class="order-name"></p>
-    <p class="quantity"></p>
+ <div *ngIf="this.isAdmine==true" class="container">
+<h1 >Welcome Owner</h1>
+ <div class="order" *ngFor="let item of data">
+    <p class="order-name">{{item.productName}}</p>
+    <p class="price">{{item.size}} {{item.price}}$</p>
     <p class="delivery"></p>
     <div class="approve">
         <button>Accept</button><button>Cancel</button>
@@ -14,10 +14,12 @@
 </div>
 
 <!-- Users -->
-<div class="container-order">
-<h1 *ngIf="this.isOwner==true">Your Order : </h1>
+<div *ngIf="this.isOwner==true" class="container-order">
+
+<h1 >Your Order : </h1>
+<div class="order" *ngFor="let item of data">
 
 <p class="name-order"></p>
 <button>+</button><p>quantity</p><button>-</button>
 <button>Submit your Order</button><button>Delete your Order</button>
-</div>
+</div></div>
