@@ -1,1 +1,23 @@
-<p>orders works!</p>
+
+
+ <!-- Admin -->
+ <div class="container">
+<h1 *ngIf="this.isAdmine==true">Welcome Owner</h1>
+ <div class="order">
+    <p class="order-name"></p>
+    <p class="quantity"></p>
+    <p class="delivery"></p>
+    <div class="approve">
+        <button>Accept</button><button>Cancel</button>
+    </div>
+ </div>
+</div>
+
+<!-- Users -->
+<div class="container-order">
+<h1 *ngIf="this.isOwner==true">Your Order : </h1>
+
+<p class="name-order"></p>
+<button>+</button><p>quantity</p><button>-</button>
+<button>Submit your Order</button><button>Delete your Order</button>
+</div>
