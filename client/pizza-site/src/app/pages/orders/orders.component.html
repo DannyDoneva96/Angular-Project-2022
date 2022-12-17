@@ -14,12 +14,16 @@
 </div>
 
 <!-- Users -->
-<div *ngIf="this.isOwner==true" class="container-order">
+<div *ngIf="user" class="container-order">
 
-<h1 >Your Order : </h1>
+
 <div class="order" *ngFor="let item of data">
-
+<div  *ngIf="item.uid === orderId">
+    <h1 >Your Order : {{item.productName}}</h1>
 <p class="name-order"></p>
-<button>+</button><p>quantity</p><button>-</button>
-<button>Submit your Order</button><button>Delete your Order</button>
-</div></div>
+<p> {{item.size}} : {{item.price}}$</p>
+<div>
+<button>+</button><p>1</p><button>-</button>
+</div>
+<button (click)="deleteData(item.id)">Submit your Order</button><button (click)="deleteData(item.id)">Delete your Order</button>
+</div></div></div>

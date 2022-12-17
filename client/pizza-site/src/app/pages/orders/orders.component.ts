@@ -16,8 +16,9 @@ import {
 })
 export class OrdersComponent implements OnInit {
        isAdmine: boolean = false;
-       isOwner: boolean = false;
+       user: boolean = false;
        public data: any = []
+       orderId :any = ''
 
   constructor(public firestore: Firestore,public auth: AuthService) {
     this.getData()
@@ -26,9 +27,12 @@ export class OrdersComponent implements OnInit {
   ngOnInit() { 
     if(localStorage.getItem('user')!==null){
       const user = JSON.parse(localStorage.getItem('user')!);  
+      this.user = user
       if(user.email == 'admin@abv.bg'){
         this.isAdmine = true;
       }
+      this.orderId = user.uid
+
     }
     
      
@@ -47,6 +51,7 @@ export class OrdersComponent implements OnInit {
 
   }
 
+  
   deleteData(id: string) {
     const dataToDelete = doc(this.firestore, 'orders', id);
     deleteDoc(dataToDelete)

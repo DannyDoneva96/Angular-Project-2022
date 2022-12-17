@@ -46,9 +46,13 @@ export class ProductDetailsComponent {
   getID: any = ''
   pizza: any = ''
   price: any = ''
+  uid: any = ''
+  
 
   constructor(private param: ActivatedRoute, public firestore: Firestore,public router:Router) {
     this.getData()
+    const user = JSON.parse(localStorage.getItem('user')!);   
+    this.uid = user.uid
   }
 
   addData(value: any) {
@@ -64,6 +68,7 @@ export class ProductDetailsComponent {
         alert(err.message)
       })
   }
+  
   getData() {
 
     this.getCategory = this.param.snapshot.paramMap.get('category');
