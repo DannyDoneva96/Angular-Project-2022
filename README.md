@@ -23,7 +23,7 @@ The project was generated with [Angular CLI](https://github.com/angular/angular-
 
 ## Permissions:
 
-| **Permissions for recipes**    | User | Guest | 
+| **Permissions for the site**   | User | Guest | 
 | :--------------------------    | :---:| :---: |
 | View Home page                 | ✅   | ✅   |
 | View About page                | ✅   | ✅   |
@@ -34,19 +34,20 @@ The project was generated with [Angular CLI](https://github.com/angular/angular-
 | Login                          | ❌   | ✅   |
 | Register                       | ❌   | ✅   |
 | Logout                         | ✅   | ❌   |
-
-
-TODO :
-| Create new product             | ✅   | ❌   |
-| Edit  product                  | ✅   | ❌   |
-| Delete product                 | ✅   | ❌   |
-
 | Add order                      | ✅   | ✅   |
 | See orders                     | ✅   | ❌   |
 |Approve order * admin           | ✅   | ❌   |
 |Reject order * admin            | ✅   | ❌   |
-| Edit order   * owner           | ✅   | ❌   |
 | Delete order * owner           | ✅   | ❌   |
+
+
+TODO :
+| Edit order   * owner           | ✅   | ❌   |
+| Update order * owner           | ✅   | ❌   |
+| Create new product             | ✅   | ❌   |
+| Edit  product                  | ✅   | ❌   |
+| Delete product                 | ✅   | ❌   |
+
 
 
 ## Start the app
@@ -59,11 +60,13 @@ This will navigate to `http://localhost:4200/` in the browser.
 
 ## Application Pages
 
-### Home Page 
+### Home Page for Guests
 
 Invites the user to log in to their account or to make order as guest. Shows information about deals of the day.
-<!-- ![Home Page View](https://github.com/yveette/Drink-Recipes-Angular-Project/blob/main/readme_files/home_page.png) -->
+![Home Page View](https://github.com/DannyDoneva96/Angular-Project-2022/blob/main/image-readme/home-page-not-logged.jpg) 
 
+   ###Home Page for Users
+![Home Page View](https://github.com/DannyDoneva96/Angular-Project-2022/blob/main/image-readme/home-page-lloged.jpg) 
 
 
 ### Register Page (logged out user)
@@ -72,7 +75,7 @@ Register a user  with  **email** and **password**.
 
 After successful registration redirects to the **Login Page**.
 
-<!-- ![Registration Page View](https://github.com/yveette/Drink-Recipes-Angular-Project/blob/main/readme_files/registration_page.png) -->
+ ![Registration Page View](https://github.com/DannyDoneva96/Angular-Project-2022/blob/main/image-readme/reg-page.jpg) 
 
 ### Login Page (logged out user)
 
@@ -80,21 +83,35 @@ Logging an already registered user with the correct **email** and **password**.
 
 After successful login redirects to the **Home page**, with an already logged-in user.
 
-<!-- ![Login Page View](https://github.com/yveette/Drink-Recipes-Angular-Project/blob/main/readme_files/login_page.png) -->
+## here are some of the validations for login and register page
+ ![Login Page View](https://github.com/DannyDoneva96/Angular-Project-2022/blob/main/image-readme/pass%20not%20match.jpg) 
+ ![Login Page View](https://github.com/DannyDoneva96/Angular-Project-2022/blob/main/image-readme/pls-enter-pass.jpg) 
+ ![Login Page View](https://github.com/DannyDoneva96/Angular-Project-2022/blob/main/image-readme/wrong-pass.jpg) 
+ ![Login Page View](https://github.com/DannyDoneva96/Angular-Project-2022/blob/main/image-readme/invalid%20email.jpg) 
 
 ### Logout Page (logged in user)
 
 The logout action is available to logged-in users. Upon success, clear any session information and redirect the user to the **Home page**.
 
 ### menu
+![Recipes Page View](https://github.com/DannyDoneva96/Angular-Project-2022/blob/main/image-readme/menu-page.jpg) 
 
 You can choose category of products.
 
+![Recipes Page View](https://github.com/DannyDoneva96/Angular-Project-2022/blob/main/image-readme/all%20deserts.jpg) 
+![Recipes Page View](https://github.com/DannyDoneva96/Angular-Project-2022/blob/main/image-readme/all-drinks.jpg) 
+![Recipes Page View](https://github.com/DannyDoneva96/Angular-Project-2022/blob/main/image-readme/all-pizzas.jpg) 
+![Recipes Page View](https://github.com/DannyDoneva96/Angular-Project-2022/blob/main/image-readme/all-salad.jpg) 
+
+
 When you click on product opens the details page where you can add it to the card.
-<!-- 
-![Recipes Page View](https://github.com/yveette/Drink-Recipes-Angular-Project/blob/main/readme_files/all_user.png) -->
 
 
+![Recipes Page View](https://github.com/DannyDoneva96/Angular-Project-2022/blob/main/image-readme/bubble-drinks-det-page.jpg) 
+
+![Recipes Page View](https://github.com/DannyDoneva96/Angular-Project-2022/blob/main/image-readme/ice-cream-product-det-page.jpg) 
+![Recipes Page View](https://github.com/DannyDoneva96/Angular-Project-2022/blob/main/image-readme/pizza-peperoni-det-page.jpg) 
+![Recipes Page View](https://github.com/DannyDoneva96/Angular-Project-2022/blob/main/image-readme/salada-det-page.jpg) 
 
 
 
@@ -103,7 +120,7 @@ When you click on product opens the details page where you can add it to the car
 
 All users should be able to view details about the product.
 
-If the currently logged-in user is the admin the **Edit** and **Delete** buttons should be displayed, otherwise they should not be available.
+NOT DONE:If the currently logged-in user is the admin the **Edit** and **Delete** buttons should be displayed, otherwise they should not be available.
 
 If logged-in user isn't the admin, he can make an order.
 
@@ -120,14 +137,19 @@ Information about the products:
 
 The Contact page is available for everyone.it contains form to add message for the owners of the pizzeria.
 
-Upon success, ......
+Upon success, the messages are saved in Database and they are displayed in Messages but can be viewed only from the Admin.
+
+![Recipes Page View](https://github.com/DannyDoneva96/Angular-Project-2022/blob/main/image-readme/contact-us.jpg) 
 
 
 ### Delete Message in Messages page
 
 Only the admin should be able to see this page
 
-### Edit Product, Add product and delete product 
+![Recipes Page View](https://github.com/DannyDoneva96/Angular-Project-2022/blob/main/image-readme/messages.jpg) 
+
+
+NOT DONE:### Edit Product, Add product and delete product 
 
 That can only be done from the admin
 
@@ -136,9 +158,9 @@ That can only be done from the admin
 
 The application should notify the users about the result of their actions.
 
-<!-- In case of error, you should display div with class "error-message".
+In case of error, you should display div with class "error-message".
 
-The user sees the last error, which disappears after 5 seconds. -->
+
 
 ### Login / Register
 
