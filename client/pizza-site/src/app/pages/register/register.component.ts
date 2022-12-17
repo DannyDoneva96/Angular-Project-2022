@@ -19,12 +19,12 @@ export class RegisterComponent implements OnInit {
 
   
   register() {
-    console.log(this.PasMatch , this.email , this.password)
-    if(this.password !== this.PasMatch){
-      this.errorMessageLog ='Passwords do not match!'
-      return
+    // console.log(this.PasMatch , this.email , this.password)
+    // if(this.password !== this.PasMatch){
+    //   this.errorMessageLog ='Passwords do not match!'
+    //   return
 
-    }
+   // }
     if (this.email == '') {
       this.errorMessageLog ='Please enter email'
       return
