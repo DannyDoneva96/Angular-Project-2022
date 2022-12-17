@@ -10,12 +10,12 @@
             <h1 name='productName'  class="productName" [(ngModel)]="pizza.name">{{pizza.name}}</h1 >
             <p  name="description"  class="descr">{{pizza.description}}</p>
 
-            <fieldset>
+            <fieldset *ngIf="pizza.category=='pizza'">
                 <legend>Select size</legend>
             
                 <div>
                   <input type="radio" id="small" name="size" value="small"
-                         checked ngModel>
+                          ngModel checked>
                   <label for="small">Small</label>
                 </div>
             
@@ -33,6 +33,44 @@
                     <label for="xxl">XXL</label>
                   </div>
             </fieldset>
+
+            <fieldset *ngIf="pizza.name=='Milkshake' || pizza.name=='Bubble Drinks'">
+              <legend>Select size</legend>
+          
+              <div>
+                <input type="radio" id="small" name="size" value="small"
+                        ngModel checked>
+                <label for="small">Strawberry</label>
+              </div>
+          
+              <div>
+                <input type="radio" id="medium" name="size" value="medium" ngModel>
+                <label for="medium">Chocolate</label>
+              </div>
+          
+              <div>
+                <input type="radio" id="large" name="size" value="large" ngModel>
+                <label for="large">Mango</label>
+              </div>
+              <div>
+                  <input type="radio" id="xxl" name="size" value="xxl" ngModel>
+                  <label for="xxl">Apple</label>
+                </div>
+          </fieldset>
+          <fieldset *ngIf="pizza.name=='Soft Drinks'">
+            <legend>Select size</legend>
+        
+            
+            <div>
+              <input type="radio" id="large" name="size" value="large" ngModel>
+              <label for="large">Can</label>
+            </div>
+            <div>
+                <input type="radio" id="xxl" name="size" value="xxl" ngModel>
+                <label for="xxl">Bottle</label>
+              </div>
+        </fieldset>
+
              <p  [(ngModel)]="uid" name="uid"> </p>
             <p class="cost">That will cost:<span [(ngModel)]="pizza.price" name="price">{{pizza.price}}$</span></p >
             <button>Add to cart</button>
