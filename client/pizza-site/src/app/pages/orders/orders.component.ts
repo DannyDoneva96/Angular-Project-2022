@@ -15,10 +15,13 @@ import {
   styleUrls: ['./orders.component.scss']
 })
 export class OrdersComponent implements OnInit {
+
+
        isAdmine: boolean = false;
        user: boolean = false;
        public data: any = []
        orderId :any = ''
+       
 
   constructor(public firestore: Firestore,public auth: AuthService) {
     this.getData()

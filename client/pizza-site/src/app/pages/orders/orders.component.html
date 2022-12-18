@@ -1,29 +1,34 @@
-
-
- <!-- Admin -->
- <div *ngIf="this.isAdmine==true" class="container">
-<h1 >Welcome Owner</h1>
- <div class="order" *ngFor="let item of data">
-    <p class="order-name">{{item.productName}}</p>
-    <p class="price">{{item.size}} {{item.price}}$</p>
-    <p class="delivery"></p>
-    <div class="approve">
-        <button>Accept</button><button>Cancel</button>
+<!-- Admin -->
+<div *ngIf="this.isAdmine==true" class="container">
+    <h1>Welcome Owner</h1>
+    <div class="order" *ngFor="let item of data">
+        <p class="order-name">{{item.productName}}</p>
+        <p class="price">{{item.size}} {{item.price}}$</p>
+        <p class="delivery"></p>
+        <div class="approve">
+            <button>Accept</button><button>Cancel</button>
+        </div>
     </div>
- </div>
 </div>
 
 <!-- Users -->
-<div *ngIf="user" class="container-order">
+<div *ngIf="user && !isAdmine" class="container-order">
 
 
-<div class="order" *ngFor="let item of data">
-<div  *ngIf="item.uid === orderId">
-    <h1 >Your Order : {{item.productName}}</h1>
-<p class="name-order"></p>
-<p> {{item.size}} : {{item.price}}$</p>
-<div>
-<button>+</button><p>1</p><button>-</button>
+    <div *ngFor="let item of data">
+
+        <div class="order" *ngIf="item.uid === orderId">
+            <div class="container-orders">
+                <h1>Your Order : {{item.productName}}</h1>
+                <p class="name-order"></p>
+                <p> {{item.size}} </p>
+                <p>Total : <span class="price">{{item.price}}$</span></p>
+                <div>
+                
+
+                <button>Submit your Order</button><button (click)="deleteData(item.id)">Delete your Order</button>
+            </div>
+        </div>
+        </div>
+    </div>
 </div>
-<button (click)="deleteData(item.id)">Submit your Order</button><button (click)="deleteData(item.id)">Delete your Order</button>
-</div></div></div>

@@ -48,6 +48,8 @@ export class ProductDetailsComponent {
   price: any = ''
   uid: any = ''
   
+  errorMessageLog: null | string = null;
+
 
   constructor(private param: ActivatedRoute, public firestore: Firestore,public router:Router) {
     this.getData()
@@ -56,6 +58,8 @@ export class ProductDetailsComponent {
   }
 
   addData(value: any) {
+    if( value.category!=='salad' && value.category!=='deals'&& value.category!=='desserts' && !value.size){ this.errorMessageLog ='Please choose a size!';return }
+
     const dbInstance = collection(this.firestore, 'orders');
     addDoc(dbInstance, value)
       .then(() => {

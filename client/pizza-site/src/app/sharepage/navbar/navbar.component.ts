@@ -8,7 +8,7 @@ import { AuthService } from '../../pages/auth/auth.service';
 })
 export class NavbarComponent implements OnInit {
 
-  isLoggedIn: boolean = false;
+  isLoggedIn: any = false;
   constructor(public auth: AuthService) { }
 
 
@@ -16,8 +16,7 @@ export class NavbarComponent implements OnInit {
     if(localStorage.getItem('token')!==null)
     
       this.isLoggedIn = true;
-      else
-      this.isLoggedIn=false
+   
   }
 
 
