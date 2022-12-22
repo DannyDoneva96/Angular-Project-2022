@@ -6,7 +6,7 @@
         </div>
 <!--NOT AUTH-->
            
-        <div class="nav-links" *ngIf="auth.isLoggedIn==false">
+        <div class="nav-links" *ngIf="auth.isLoggedIn$==false">
             <a routerLink="" routerLinkActive="active-link" > Home </a>
             <a routerLink="menu" routerLinkActive="active-link"> Menu </a>
             <a routerLink="about" routerLinkActive="active-link"> About </a>
@@ -18,7 +18,7 @@
         </div>
         <!--AUTH-->
 
-        <div class="nav-links" *ngIf="auth.isLoggedIn==true">
+        <div class="nav-links" *ngIf="auth.isLoggedIn$==true">
             <a routerLink="" routerLinkActive="active-link" > Home </a>
             <a routerLink="menu" routerLinkActive="active-link"> Menu </a>
             <a routerLink="about" routerLinkActive="active-link"> About </a>

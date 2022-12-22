@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { MenuComponent } from './pages/menu/menu.component';
 import { MessagesComponent } from './pages/messages/messages.component';
+import {AuthGuardGuard} from './Guards/auth-guard.guard'
 
 import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
@@ -19,8 +20,8 @@ import {OrdersComponent} from './pages/orders/orders.component'
 const routes: Routes = [
   {path: '',component:HomeComponent},
   {path: 'menu',component:MenuComponent},
-  {path: 'messages',component:MessagesComponent},
-  {path: 'orders',component:OrdersComponent},
+  {path: 'messages',component:MessagesComponent,canActivate:[AuthGuardGuard]},
+  {path: 'orders',component:OrdersComponent,canActivate:[AuthGuardGuard]},
 
   {path: 'menu/deals',component:DealsComponent},
   {path: 'menu/pizza',component:PizzaComponent},

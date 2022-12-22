@@ -3,25 +3,31 @@ import { AngularFireAuth } from '@angular/fire/compat/auth';
 import { Router } from '@angular/router';
 import {User } from './user'
 import * as auth from 'firebase/auth';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
-
-  isLoggedIn: boolean = false;
+  isLoggedIn$:boolean= false
+  _isLoggedIn= new BehaviorSubject<boolean>(false);
+  isLoggedIn = this._isLoggedIn.asObservable();
   errorMessage: null | string = null;
   userData: any; // Save logged in user data
 
 
   constructor(private fireauth: AngularFireAuth, private router: Router){
+  
     /* Saving user data in localstorage when 
     logged in and setting up null when logged out */
+
     this.fireauth.authState.subscribe((user) => {
       if (user) {
-        this.userData = user;
+         this.userData = user;
         localStorage.setItem('user', JSON.stringify(this.userData));
-        JSON.parse(localStorage.getItem('user')!);
+        JSON.parse(localStorage.getItem('user')!); 
+               
+
       } else {
         localStorage.setItem('user', 'null');
         JSON.parse(localStorage.getItem('user')!);
@@ -29,12 +35,14 @@ export class AuthService {
     });
 }
 
+
   //login method
   login(email: string, password: string) {
     this.fireauth.signInWithEmailAndPassword(email, password).then((result) => {
       this.SetUserData(result.user);
       localStorage.setItem('token', 'true');
-      this.isLoggedIn = true;
+      this.isLoggedIn$ = true;
+      this._isLoggedIn.next(true) ;
       this.router.navigate(['/']);
     }, err => {
       return this.errorMessage = err.message.split('/')[1].split(')')[0]
@@ -69,7 +77,9 @@ export class AuthService {
       this.fireauth.signOut().then(() => {
         localStorage.removeItem('user')
         localStorage.removeItem('token')
-        this.isLoggedIn = false
+        this.isLoggedIn$ = false;
+
+        this._isLoggedIn.next(false) ;
         this.router.navigate(['/login']);
 
       }, err => { alert(err.message) });

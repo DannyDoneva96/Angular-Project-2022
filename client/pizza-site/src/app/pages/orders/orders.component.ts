@@ -32,6 +32,7 @@ export class OrdersComponent implements OnInit {
       const user = JSON.parse(localStorage.getItem('user')!);  
       this.user = user
       if(user.email == 'admin@abv.bg'){
+        console.log('admin@abv.bg')
         this.isAdmine = true;
       }
       this.orderId = user.uid

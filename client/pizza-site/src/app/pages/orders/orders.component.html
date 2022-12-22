@@ -6,7 +6,7 @@
         <p class="price">{{item.size}} {{item.price}}$</p>
         <p class="delivery"></p>
         <div class="approve">
-            <button>Accept</button><button>Cancel</button>
+            <button>Accept</button><button (click)="deleteData(item.id)" >Cancel</button>
         </div>
     </div>
 </div>
