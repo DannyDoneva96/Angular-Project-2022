@@ -2,7 +2,7 @@
     <div class="content-login">
         <section class="section-login">
             <img src="../../../assets/images/login-removebg-preview.png" alt="">
-            <h1>WELCOME </h1>
+            <h1>REGISTER </h1>
             <form action="">
                 <div>
                     <i class="fa-regular fa-user"></i>
@@ -12,7 +12,7 @@
                     <input class='inp-log' type="password" name="password" placeholder="password" id="password" [(ngModel)]="password"> 
                 </div>
                 <div><i class="fa-solid fa-lock"></i>
-                    <input class='inp-log' type="password" name="PasMatch" placeholder="repeat your password" id="password"  [ngModel]="PasMatch"> 
+                    <input class='inp-log' type="password" name="PasMatch" placeholder="repeat your password" id="PasMatch"  [(ngModel)]="PasMatch"> 
                 </div>
                 <p>{{errorMessageLog}}</p>
 
