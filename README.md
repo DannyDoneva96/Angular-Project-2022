@@ -1,5 +1,7 @@
 #  Donevis-Pizzeria-Angular-Project
 This app was created for my project defence @ SoftUni for my Angular course 18.12.2022 .
+# LIVE DEMO
+https://donevis-pizzeria.web.app/
 
 The project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.2.
 
